@@ -63,7 +63,8 @@ class NuscDataset(data.Dataset):
         super(NuscDataset, self).__init__()
 
         self.data_path = data_root
-        self.data_path = '/share/nuscenes'
+        #self.data_path = '/share/nuscenes'
+        self.data_path = /esat/gojira/students/r0457650/Monodepth2/datasets/nusc
         self.filenames = filenames
         self.height = height
         self.width = width
