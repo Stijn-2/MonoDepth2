@@ -10,7 +10,8 @@ from trainer import Trainer
 from options import MonodepthOptions, NuscdepthOptions
 import os
 #os.environ['CUDA_VISIBLE_DEVICES'] = str(1)
-os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+#os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+os.environ['CUDA_VISIBLE_DEVICES'] = "1"
 options = NuscdepthOptions()
 opts = options.parse()
 
