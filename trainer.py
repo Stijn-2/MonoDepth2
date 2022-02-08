@@ -334,7 +334,7 @@ class Trainer:
                 # outputs[("translation", 0, f_i)] = H_relative_pose[0:3,3]
                 # outputs[("cam_T_cam", 0, f_i)] = transformation_from_parameters(
                 #     H_relative_pose[0:3,0:3][:, 0], H_relative_pose[0:3,3][:, 0], invert=(f_i < 0))
-                print f_i
+                print(f_i)
                 if f_i < 0:
                     outputs[("cam_T_cam", 0, f_i)] = inputs[("pose_gt", 0, -1)].type(torch.float32)
                 else:
