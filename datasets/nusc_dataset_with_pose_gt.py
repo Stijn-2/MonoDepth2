@@ -63,7 +63,7 @@ class NuscDataset(data.Dataset):
         super(NuscDataset, self).__init__()
 
         self.data_path = data_root
-        self.data_path = '/share/nuscenes'
+        self.data_path = '/esat/gojira/students/r0457650/Monodepth2/datasets/nusc'
         self.filenames = filenames
         self.height = height
         self.width = width
@@ -79,7 +79,7 @@ class NuscDataset(data.Dataset):
         self.to_tensor = transforms.ToTensor()
         self.nusc = NuScenes(version=version, dataroot=self.data_path, verbose=True)
         self.sensor = sensor
-        self.data_root = '/share/nuscenes'
+        self.data_root = '/esat/gojira/students/r0457650/Monodepth2/datasets/nusc'
         self.full_res_shape = (1600, 640)
 
         # We need to specify augmentations differently in newer versions of torchvision.
